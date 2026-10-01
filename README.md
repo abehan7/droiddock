@@ -10,12 +10,28 @@
   <a href="https://abehan7.github.io/droiddock/">Documentation</a>
 </p>
 
----
+<p align="center">
+  <img src="docs/assets/screenshots/browse.gif" width="820" alt="Browsing a phone's DCIM/Camera folder in DroidDock">
+</p>
 
 Plug in your phone and DroidDock opens it like a Finder window: Icons, List, Columns and Gallery
 views with real photo thumbnails, drag and drop, Back/Forward, Get Info, New Folder and Delete.
 It talks to the phone over **MTP** ("File transfer" mode, through [libmtp](https://github.com/libmtp/libmtp))
 or, when USB debugging is on, over **adb**, which lists big folders much faster.
+
+## Screenshots
+
+| Icons, with every photo in one place | List |
+| --- | --- |
+| ![Images favorite in Icons view](docs/assets/screenshots/icons.png) | ![Camera folder in List view](docs/assets/screenshots/list.png) |
+| **Columns** | **Gallery** |
+| ![Columns view](docs/assets/screenshots/columns.png) | ![Gallery view](docs/assets/screenshots/gallery.png) |
+
+<p align="center">
+  <img src="docs/assets/screenshots/views.gif" width="720" alt="Switching between Icons, List and Gallery views">
+</p>
+
+All screenshots use the built-in demo phone (`--args -demo`).
 
 ## Download
 

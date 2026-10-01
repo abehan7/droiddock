@@ -249,12 +249,18 @@ struct BrowserColumn: View {
     let level: Int
 
     private var isCurrent: Bool { level == model.path.count }
-    private var folderID: UInt32 { level == 0 ? MTPEngine.rootFolder : model.path[level - 1].id }
+    private var folderID: UInt32 { level == 0 ? MTPEngine.rootFolder : crumbID(level - 1) ?? MTPEngine.rootFolder }
+
+    /// SwiftUI can still render a column for a moment after the path got shorter (jumping
+    /// to a favorite or storage), so never index the path blindly.
+    private func crumbID(_ index: Int) -> UInt32? {
+        model.path.indices.contains(index) ? model.path[index].id : nil
+    }
 
     var body: some View {
         let items = isCurrent ? model.visibleItems : model.arranged(model.cachedListing(folder: folderID) ?? [])
         List(items, selection: Binding(
-            get: { isCurrent ? model.selection : [model.path[level].id] },
+            get: { isCurrent ? model.selection : crumbID(level).map { [$0] } ?? [] },
             set: { ids in Task { await model.selectInColumn(ids, level: level) } })
         ) { item in
             HStack(spacing: 6) {

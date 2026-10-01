@@ -29,6 +29,8 @@ DroidDock picks adb automatically when it's available and falls back to File tra
 
 ## Browse
 
+![Switching between Icons, List and Gallery views](assets/screenshots/views.gif)
+
 | Do this | How |
 | --- | --- |
 | Switch view | **View** menu or toolbar: Icons ⌘1, List ⌘2, Columns ⌘3, Gallery ⌘4 |

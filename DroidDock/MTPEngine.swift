@@ -60,13 +60,13 @@ final class MTPEngine: @unchecked Sendable {
     // MARK: Browsing
 
     func list(storage: UInt32, folder: UInt32) async throws -> [PhoneItem] {
-        if let demo { return demo.list(folder: folder) }
+        if let demo { return demo.list(storage: storage, folder: folder) }
         return try await run { try self.listSync(self.requireDevice(), storage: storage, folder: folder) }
     }
 
     /// The IDs of a folder's contents: one quick request, without names or sizes.
     func childIDs(storage: UInt32, folder: UInt32) async throws -> [UInt32] {
-        if let demo { return demo.list(folder: folder).map(\.id) }
+        if let demo { return demo.list(storage: storage, folder: folder).map(\.id) }
         return try await run {
             let dev = try self.requireDevice()
             var ids: UnsafeMutablePointer<UInt32>?

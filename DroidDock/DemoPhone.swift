@@ -11,16 +11,20 @@ struct DemoPhone {
         PhoneStorage(id: 0x0002_0001, name: "SD card", freeBytes: 51_000_000_000, capacityBytes: 64_000_000_000),
     ]
     private var children: [UInt32: [PhoneItem]] = [:]
+    /// The SD card's root, kept apart from the internal root (both are `rootFolder` to MTP).
+    private static let sdCardRoot: UInt32 = 0xFFFF_0000
 
     init() {
         var nextID: UInt32 = 100
         var tree: [UInt32: [PhoneItem]] = [:]
         let now = Date.now
 
-        func add(_ name: String, in parent: UInt32, folder: Bool = false, size: UInt64 = 0, daysAgo: Double) -> UInt32 {
+        func add(_ name: String, in parent: UInt32, folder: Bool = false, size: UInt64 = 0, daysAgo: Double,
+                 storage: UInt32 = 0x0001_0001) -> UInt32 {
             nextID += 1
             tree[parent, default: []].append(PhoneItem(
-                id: nextID, parentID: parent, storageID: 0x0001_0001, name: name, size: size,
+                id: nextID, parentID: parent == Self.sdCardRoot ? MTPEngine.rootFolder : parent,
+                storageID: storage, name: name, size: size,
                 modified: now.addingTimeInterval(-daysAgo * 86_400), isFolder: folder))
             return nextID
         }
@@ -62,11 +66,23 @@ struct DemoPhone {
         _ = add("Android", in: root, folder: true, daysAgo: 400)
         _ = add("Alarms", in: root, folder: true, daysAgo: 400)
         _ = add("Ringtones", in: root, folder: true, daysAgo: 400)
+
+        let sd: UInt32 = 0x0002_0001
+        let sdDCIM = add("DCIM", in: Self.sdCardRoot, folder: true, daysAgo: 120, storage: sd)
+        let sdCamera = add("Camera", in: sdDCIM, folder: true, daysAgo: 120, storage: sd)
+        for i in 0..<10 {
+            _ = add(String(format: "202505%02d_1%05d.jpg", 28 - i * 2, 7120 + i * 53),
+                    in: sdCamera, size: UInt64(2_900_000 + i * 64_000), daysAgo: Double(i) * 4 + 125, storage: sd)
+        }
+        let backups = add("Backups", in: Self.sdCardRoot, folder: true, daysAgo: 210, storage: sd)
+        _ = add("contacts-2026-03.vcf", in: backups, size: 182_000, daysAgo: 210, storage: sd)
+        _ = add("whatsapp-backup.zip", in: backups, size: 2_300_000_000, daysAgo: 240, storage: sd)
         children = tree
     }
 
-    func list(folder: UInt32) -> [PhoneItem] {
-        children[folder] ?? []
+    func list(storage: UInt32, folder: UInt32) -> [PhoneItem] {
+        let isSDRoot = folder == MTPEngine.rootFolder && storage == storages[1].id
+        return children[isSDRoot ? Self.sdCardRoot : folder] ?? []
     }
 
     /// Real landscape photos that ship with macOS, used as the demo camera roll.

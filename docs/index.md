@@ -10,6 +10,8 @@ preview, download and upload files with the views and shortcuts you already know
 **[⬇ Download the latest DMG](https://github.com/abehan7/droiddock/releases/latest)**
 · Apple silicon Mac · macOS 26 or later · free and [open source](https://github.com/abehan7/droiddock)
 
+![Browsing a phone's camera folder](assets/screenshots/browse.gif)
+
 ## Guides
 
 - **[Install](install.md)**: download, drag to Applications, get past the first-launch warning
@@ -25,3 +27,13 @@ nothing like a Mac. DroidDock is a native SwiftUI app:
 - **Photos first**: **Images** and **Videos** gather every camera shot, screenshot and recording into one place, with thumbnails
 - **Two ways in**: MTP ("File transfer" mode) works on any phone; with USB debugging on it switches to adb, which lists huge folders in about a second
 - **No Homebrew needed**: the DMG bundles everything it uses
+
+## Screenshots
+
+| Icons | List |
+| --- | --- |
+| ![Icons view](assets/screenshots/icons.png) | ![List view](assets/screenshots/list.png) |
+| **Columns** | **Gallery** |
+| ![Columns view](assets/screenshots/columns.png) | ![Gallery view](assets/screenshots/gallery.png) |
+
+Screenshots use the built-in demo phone: `open /Applications/DroidDock.app --args -demo`.
