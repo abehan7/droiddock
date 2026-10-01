@@ -41,8 +41,12 @@ and library validation is off because the Homebrew dylibs aren't signed by the s
 scripts/make-dmg.sh
 ```
 
-This builds Release and writes `dist/DroidDock-<version>.dmg` with the app, an Applications
-shortcut and the license files. The version comes from `MARKETING_VERSION` in `project.yml`.
+This builds Release and writes `dist/DroidDock-<version>.dmg` with the drag-to-Applications
+window. The window layout lives in `scripts/dmg/settings.py` and is built by
+[dmgbuild](https://github.com/dmgbuild/dmgbuild), which the script installs into `build/dmgbuild-venv`
+on first run. The background is `scripts/dmg/background.png` (+ `@2x`), drawn from
+`design/dmg-background.svg`; keep it light, because Finder always draws the icon labels in black.
+The version comes from `MARKETING_VERSION` in `project.yml`.
 
 Releases are ad-hoc signed (`CODE_SIGN_IDENTITY: "-"`). To ship a notarized build, set a
 Developer ID identity and team in `project.yml`, then notarize the DMG with `xcrun notarytool`.
