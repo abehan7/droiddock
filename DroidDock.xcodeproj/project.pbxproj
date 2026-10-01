@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F3C21FA9F8385B173C387A /* MTPEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE26CBBDB4F37E9B3F44C8A /* MTPEngine.swift */; };
+		09E816C65001586F69D7B2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA22BC18FB29AC5AF08A7550 /* Assets.xcassets */; };
+		0B17F3E4ABE0AC02CA9E819E /* DemoPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58312AC547AA5BBE29DE109E /* DemoPhone.swift */; };
+		125BB2F2458319D3BCD834C2 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2EFD5E2B484AFDB325F85 /* BrowserModel.swift */; };
+		2957B143244CE145992D360B /* WiFiConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646F3F85D1CF9D8EC213EF8 /* WiFiConnectView.swift */; };
+		4BAEF8D8D5957CA327638AC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17485044337CD3518BB23F5F /* ContentView.swift */; };
+		59486C5380A322BAD667F522 /* ADBEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C7BE4A61A9E5D42C906BB3 /* ADBEngine.swift */; };
+		5BF3F10AC972F8BC2B1CD532 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FFE7CB5F67ADC61C3E8BFC /* Models.swift */; };
+		71FF7D808FF02175483416D9 /* DroidDockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB9BAF7F1932C14BE3E718 /* DroidDockApp.swift */; };
+		8D69F2CE0296723675BAF441 /* BrowserViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171E0C57F0A35953A8E9983 /* BrowserViews.swift */; };
+		BFE800465A2970EF7DB3D9F5 /* ADB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B942C8C8F3396180B67B1 /* ADB.swift */; };
+		C1EF28418EC16F0715702C86 /* PhoneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D01CDD427C9181E5EFC29 /* PhoneEngine.swift */; };
+		C77F0ECAF3D2E0D151936971 /* USBWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F8C56AF8A933798558578 /* USBWatcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		030B942C8C8F3396180B67B1 /* ADB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADB.swift; sourceTree = "<group>"; };
+		15C7BE4A61A9E5D42C906BB3 /* ADBEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBEngine.swift; sourceTree = "<group>"; };
+		1646F3F85D1CF9D8EC213EF8 /* WiFiConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiConnectView.swift; sourceTree = "<group>"; };
+		17485044337CD3518BB23F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		367F8C56AF8A933798558578 /* USBWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBWatcher.swift; sourceTree = "<group>"; };
+		58312AC547AA5BBE29DE109E /* DemoPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPhone.swift; sourceTree = "<group>"; };
+		7C1D5F865E9E0DF830374684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A08D01CDD427C9181E5EFC29 /* PhoneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneEngine.swift; sourceTree = "<group>"; };
+		A1313FE39A38525F26A2683C /* DroidDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DroidDock.entitlements; sourceTree = "<group>"; };
+		AA22BC18FB29AC5AF08A7550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE26CBBDB4F37E9B3F44C8A /* MTPEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPEngine.swift; sourceTree = "<group>"; };
+		C171E0C57F0A35953A8E9983 /* BrowserViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViews.swift; sourceTree = "<group>"; };
+		CCEB9BAF7F1932C14BE3E718 /* DroidDockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroidDockApp.swift; sourceTree = "<group>"; };
+		D5FFE7CB5F67ADC61C3E8BFC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D6E2EFD5E2B484AFDB325F85 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
+		DE555396203E7FDDB611F972 /* DroidDock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DroidDock-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0DD034088C9CBDD37538E29 /* DroidDock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroidDock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0458BB571F7E4A78F3504572 = {
+			isa = PBXGroup;
+			children = (
+				2E9812A188C8A8DA70D3D469 /* DroidDock */,
+				7CA230CB3ADC5B9CB9362C2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E9812A188C8A8DA70D3D469 /* DroidDock */ = {
+			isa = PBXGroup;
+			children = (
+				030B942C8C8F3396180B67B1 /* ADB.swift */,
+				15C7BE4A61A9E5D42C906BB3 /* ADBEngine.swift */,
+				AA22BC18FB29AC5AF08A7550 /* Assets.xcassets */,
+				D6E2EFD5E2B484AFDB325F85 /* BrowserModel.swift */,
+				C171E0C57F0A35953A8E9983 /* BrowserViews.swift */,
+				17485044337CD3518BB23F5F /* ContentView.swift */,
+				58312AC547AA5BBE29DE109E /* DemoPhone.swift */,
+				DE555396203E7FDDB611F972 /* DroidDock-Bridging-Header.h */,
+				A1313FE39A38525F26A2683C /* DroidDock.entitlements */,
+				CCEB9BAF7F1932C14BE3E718 /* DroidDockApp.swift */,
+				7C1D5F865E9E0DF830374684 /* Info.plist */,
+				D5FFE7CB5F67ADC61C3E8BFC /* Models.swift */,
+				ACE26CBBDB4F37E9B3F44C8A /* MTPEngine.swift */,
+				A08D01CDD427C9181E5EFC29 /* PhoneEngine.swift */,
+				367F8C56AF8A933798558578 /* USBWatcher.swift */,
+				1646F3F85D1CF9D8EC213EF8 /* WiFiConnectView.swift */,
+			);
+			path = DroidDock;
+			sourceTree = "<group>";
+		};
+		7CA230CB3ADC5B9CB9362C2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD034088C9CBDD37538E29 /* DroidDock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE84050AC6349B18C6537C5E /* DroidDock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED34B1559F575E5C6A1CF7C /* Build configuration list for PBXNativeTarget "DroidDock" */;
+			buildPhases = (
+				C7777CBDAAF29F2737CAE742 /* Sources */,
+				ADC898C84A3CB40C55D08FE6 /* Resources */,
+				8F0D8C71978DA1C900D72F1E /* Embed libmtp and libusb */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroidDock;
+			packageProductDependencies = (
+			);
+			productName = DroidDock;
+			productReference = F0DD034088C9CBDD37538E29 /* DroidDock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		818B842CF4C9235C5B634625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AE84050AC6349B18C6537C5E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 18A85CD2501298886D2F8D51 /* Build configuration list for PBXProject "DroidDock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0458BB571F7E4A78F3504572;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7CA230CB3ADC5B9CB9362C2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE84050AC6349B18C6537C5E /* DroidDock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADC898C84A3CB40C55D08FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E816C65001586F69D7B2B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F0D8C71978DA1C900D72F1E /* Embed libmtp and libusb */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed libmtp and libusb";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/scripts/embed-dylibs.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7777CBDAAF29F2737CAE742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE800465A2970EF7DB3D9F5 /* ADB.swift in Sources */,
+				59486C5380A322BAD667F522 /* ADBEngine.swift in Sources */,
+				125BB2F2458319D3BCD834C2 /* BrowserModel.swift in Sources */,
+				8D69F2CE0296723675BAF441 /* BrowserViews.swift in Sources */,
+				4BAEF8D8D5957CA327638AC4 /* ContentView.swift in Sources */,
+				0B17F3E4ABE0AC02CA9E819E /* DemoPhone.swift in Sources */,
+				71FF7D808FF02175483416D9 /* DroidDockApp.swift in Sources */,
+				05F3C21FA9F8385B173C387A /* MTPEngine.swift in Sources */,
+				5BF3F10AC972F8BC2B1CD532 /* Models.swift in Sources */,
+				C1EF28418EC16F0715702C86 /* PhoneEngine.swift in Sources */,
+				C77F0ECAF3D2E0D151936971 /* USBWatcher.swift in Sources */,
+				2957B143244CE145992D360B /* WiFiConnectView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19070C5208736C7C227A6E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DroidDock/DroidDock.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				INFOPLIST_FILE = DroidDock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lmtp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abehan.DroidDock;
+				PRODUCT_NAME = DroidDock;
+				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_OBJC_BRIDGING_HEADER = "DroidDock/DroidDock-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		27FBEC7C9B5A8038DE3E2B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DroidDock/DroidDock.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				INFOPLIST_FILE = DroidDock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lmtp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abehan.DroidDock;
+				PRODUCT_NAME = DroidDock;
+				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_OBJC_BRIDGING_HEADER = "DroidDock/DroidDock-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		674765BC85E15EBBCFA349FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A54B2A3F1ED7D286D4CE6F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A85CD2501298886D2F8D51 /* Build configuration list for PBXProject "DroidDock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54B2A3F1ED7D286D4CE6F0F /* Debug */,
+				674765BC85E15EBBCFA349FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8ED34B1559F575E5C6A1CF7C /* Build configuration list for PBXNativeTarget "DroidDock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19070C5208736C7C227A6E01 /* Debug */,
+				27FBEC7C9B5A8038DE3E2B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 818B842CF4C9235C5B634625 /* Project object */;
+}

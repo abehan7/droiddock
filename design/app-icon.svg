@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+<linearGradient id="bg" x1="100" y1="100" x2="924" y2="924" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7B5CF0"/><stop offset="0.45" stop-color="#3B2A8F"/><stop offset="1" stop-color="#0F0C2E"/></linearGradient>
+<radialGradient id="halo" cx="512" cy="512" r="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFB020" stop-opacity="0.38"/><stop offset="1" stop-color="#FFB020" stop-opacity="0"/></radialGradient>
+<linearGradient id="bt" x1="560" y1="200" x2="470" y2="828" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF27A"/><stop offset="0.5" stop-color="#FFC928"/><stop offset="1" stop-color="#FF8A1A"/></linearGradient>
+<linearGradient id="rim" x1="0" y1="200" x2="0" y2="828" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.85"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.15"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.3"/></filter>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+<clipPath id="tile"><rect x="100" y="100" width="824" height="824" rx="185"/></clipPath>
+</defs>
+<rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)" filter="url(#sh)"/>
+<g clip-path="url(#tile)">
+  <rect x="100" y="100" width="824" height="824" fill="url(#halo)"/>
+  <path d="M632 200 L346 578 H514 L424 828 L694 446 H546 Z" fill="#FF9F1A" opacity="0.75" filter="url(#glow)" stroke="#FF9F1A" stroke-width="24" stroke-linejoin="round"/>
+</g>
+<rect x="101" y="101" width="822" height="822" rx="184" fill="none" stroke="#fff" stroke-opacity="0.16" stroke-width="2"/>
+<path d="M632 200 L346 578 H514 L424 828 L694 446 H546 Z" fill="url(#bt)" stroke="url(#bt)" stroke-width="22" stroke-linejoin="round"/>
+<path d="M632 200 L346 578 H514 L424 828 L694 446 H546 Z" fill="none" stroke="url(#rim)" stroke-width="5" stroke-linejoin="round" transform="translate(0 -1)"/>
+</svg>

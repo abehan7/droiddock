@@ -1,0 +1,57 @@
+name: DroidDock
+options:
+  bundleIdPrefix: com.abehan
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+
+targets:
+  DroidDock:
+    type: application
+    platform: macOS
+    sources:
+      - path: DroidDock
+    info:
+      path: DroidDock/Info.plist
+      properties:
+        CFBundleDisplayName: DroidDock
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        LSApplicationCategoryType: public.app-category.utilities
+        NSLocalNetworkUsageDescription: DroidDock finds phones with Wireless debugging on your Wi-Fi so it can connect to them.
+        NSBonjourServices:
+          - _adb-tls-pairing._tcp
+          - _adb-tls-connect._tcp
+          - _adb._tcp
+        NSHumanReadableCopyright: ""
+    # No App Sandbox: it blocks raw USB access and writing to arbitrary folders.
+    # Library validation off: libmtp/libusb aren't signed by our team.
+    entitlements:
+      path: DroidDock/DroidDock.entitlements
+      properties:
+        com.apple.security.cs.disable-library-validation: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.abehan.DroidDock
+        PRODUCT_NAME: DroidDock
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
+        SWIFT_OBJC_BRIDGING_HEADER: DroidDock/DroidDock-Bridging-Header.h
+        HEADER_SEARCH_PATHS: /opt/homebrew/include
+        LIBRARY_SEARCH_PATHS: /opt/homebrew/lib
+        OTHER_LDFLAGS: -lmtp
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        DEVELOPMENT_TEAM: ""
+        GENERATE_INFOPLIST_FILE: NO
+        COMBINE_HIDPI_IMAGES: YES
+    postBuildScripts:
+      - name: Embed libmtp and libusb
+        script: "\"$SRCROOT/scripts/embed-dylibs.sh\""
+        basedOnDependencyAnalysis: false
