@@ -17,6 +17,9 @@
 		5BF3F10AC972F8BC2B1CD532 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FFE7CB5F67ADC61C3E8BFC /* Models.swift */; };
 		71FF7D808FF02175483416D9 /* DroidDockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB9BAF7F1932C14BE3E718 /* DroidDockApp.swift */; };
 		8D69F2CE0296723675BAF441 /* BrowserViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171E0C57F0A35953A8E9983 /* BrowserViews.swift */; };
+		8D8F96812B4F82FB3A5FF037 /* licenses in Resources */ = {isa = PBXBuildFile; fileRef = 841F8BD1BEA89A2A2A571E27 /* licenses */; };
+		A740299FC55B0B5D36814DE4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7BF63C13D8422AFECB4EA1B2 /* LICENSE */; };
+		B3F1F4109F19716E3E026ADD /* THIRD_PARTY_NOTICES.md in Resources */ = {isa = PBXBuildFile; fileRef = CAF9E1819C173B9A5D3C9561 /* THIRD_PARTY_NOTICES.md */; };
 		BFE800465A2970EF7DB3D9F5 /* ADB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B942C8C8F3396180B67B1 /* ADB.swift */; };
 		C1EF28418EC16F0715702C86 /* PhoneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D01CDD427C9181E5EFC29 /* PhoneEngine.swift */; };
 		C77F0ECAF3D2E0D151936971 /* USBWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F8C56AF8A933798558578 /* USBWatcher.swift */; };
@@ -29,12 +32,15 @@
 		17485044337CD3518BB23F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		367F8C56AF8A933798558578 /* USBWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBWatcher.swift; sourceTree = "<group>"; };
 		58312AC547AA5BBE29DE109E /* DemoPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPhone.swift; sourceTree = "<group>"; };
+		7BF63C13D8422AFECB4EA1B2 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
 		7C1D5F865E9E0DF830374684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		841F8BD1BEA89A2A2A571E27 /* licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = licenses; sourceTree = SOURCE_ROOT; };
 		A08D01CDD427C9181E5EFC29 /* PhoneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneEngine.swift; sourceTree = "<group>"; };
 		A1313FE39A38525F26A2683C /* DroidDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DroidDock.entitlements; sourceTree = "<group>"; };
 		AA22BC18FB29AC5AF08A7550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE26CBBDB4F37E9B3F44C8A /* MTPEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPEngine.swift; sourceTree = "<group>"; };
 		C171E0C57F0A35953A8E9983 /* BrowserViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViews.swift; sourceTree = "<group>"; };
+		CAF9E1819C173B9A5D3C9561 /* THIRD_PARTY_NOTICES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THIRD_PARTY_NOTICES.md; sourceTree = "<group>"; };
 		CCEB9BAF7F1932C14BE3E718 /* DroidDockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroidDockApp.swift; sourceTree = "<group>"; };
 		D5FFE7CB5F67ADC61C3E8BFC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D6E2EFD5E2B484AFDB325F85 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
@@ -46,6 +52,9 @@
 		0458BB571F7E4A78F3504572 = {
 			isa = PBXGroup;
 			children = (
+				7BF63C13D8422AFECB4EA1B2 /* LICENSE */,
+				841F8BD1BEA89A2A2A571E27 /* licenses */,
+				CAF9E1819C173B9A5D3C9561 /* THIRD_PARTY_NOTICES.md */,
 				2E9812A188C8A8DA70D3D469 /* DroidDock */,
 				7CA230CB3ADC5B9CB9362C2A /* Products */,
 			);
@@ -144,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E816C65001586F69D7B2B2 /* Assets.xcassets in Resources */,
+				A740299FC55B0B5D36814DE4 /* LICENSE in Resources */,
+				B3F1F4109F19716E3E026ADD /* THIRD_PARTY_NOTICES.md in Resources */,
+				8D8F96812B4F82FB3A5FF037 /* licenses in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

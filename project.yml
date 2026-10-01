@@ -11,6 +11,14 @@ targets:
     platform: macOS
     sources:
       - path: DroidDock
+      # License texts ship inside the app (Contents/Resources) for the bundled LGPL libraries.
+      - path: LICENSE
+        buildPhase: resources
+      - path: THIRD_PARTY_NOTICES.md
+        buildPhase: resources
+      - path: licenses
+        type: folder
+        buildPhase: resources
     info:
       path: DroidDock/Info.plist
       properties:

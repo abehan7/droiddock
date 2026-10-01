@@ -13,3 +13,6 @@ Both are **dynamically linked**. They ship unmodified, as Homebrew builds them, 
 loaded through `@rpath`. You can swap in your own build of either library by replacing
 that file and re-signing the app (`codesign --force --deep --sign - DroidDock.app`).
 `scripts/embed-dylibs.sh` shows exactly how they are copied in.
+
+These license texts also ship inside the app, in `DroidDock.app/Contents/Resources/`
+(`LICENSE`, `THIRD_PARTY_NOTICES.md` and the `licenses` folder).

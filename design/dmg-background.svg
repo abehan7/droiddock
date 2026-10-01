@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <!-- Light on purpose: Finder always draws icon labels in black on a custom background. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAF8FF"/>
+      <stop offset="1" stop-color="#ECE7FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="320" cy="185" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD84D" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFD84D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arrow" x1="262" y1="0" x2="378" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7B5CF0" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#5B3FD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <!-- arrow from the app (x 160) to Applications (x 480), icons centred at y 185 -->
+  <path d="M262 185 H368" stroke="url(#arrow)" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 14"/>
+  <path d="M362 169 L380 185 L362 201" fill="none" stroke="#5B3FD6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="338" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#2B2161" fill-opacity="0.7">Drag DroidDock into your Applications folder</text>
+</svg>
